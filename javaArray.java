@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class javaArray {
     public static void main(String[] args) {
         
-        Scanner scan = new Scanner(System.in);
-        String[] IDnum = {"2022-001", "2022-002", "2022-003", "2020-004"};
+        Scanner sc = new Scanner(System.in);
+        String[] ID = {"2022-001", "2022-002", "2022-003", "2020-004"};
         String[] course = {"BSIT", "BSCS", "BSIS", "BSEMC"};
         String[] name = {"James Cooper", "Princess Smith", "Dianna Ross", "James Butler"};
         String[] sports = {"Basketball", "Badminton", "Swimming", "Baseball"};
@@ -19,19 +19,19 @@ public class javaArray {
     }
 
     System.out.print("\nEnter Student Index: ");
-    int index = scan.nextInt();
-    scan.nextLine();
-if (index >= 0 && index <= 3) {
-System.out.print("\nIndex Number\t: " + index);
-System.out.print("\nStudent ID\t: " + IDnum[index]);
-System.out.print("\nName of Student\t: " + name[index]);
-System.out.print("\nCourse\t\t: " + course[index]);
-System.out.print("\nSports\t\t: " + sports[index]);
-System.out.print("\nContact No.\t: " + contact[index]);
-} else {
-System.out.println("Student not found!");
-}
-scan.close();
-System.out.println();
+    int index = sc.nextInt();
+    sc.nextLine();
+    if (index >= 0 && index <= 3) {
+        System.out.print("\nIndex Number\t: " + index);
+        System.out.print("\nStudent ID\t: " + ID[index]);
+        System.out.print("\nName of Student\t: " + name[index]);
+        System.out.print("\nCourse\t\t: " + course[index]);
+        System.out.print("\nSports\t\t: " + sports[index]);
+        System.out.print("\nContact No.\t: " + contact[index]);
+    } else {
+        System.out.println("Student not found!");
+    }
+    sc.close();
+    System.out.println();
 }
 }
